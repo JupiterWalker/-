@@ -1,0 +1,133 @@
+/* 对于容器 .container */
+.container {
+  /* display: flex;
+  flex-direction: column;
+  height: 90vh;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+  box-sizing: border-box;
+  background-color: #837b7b; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #cfcfcf;
+}
+
+.messages_box{
+  width: 750rpx; 
+  height: 1329rpx; 
+  display: block; 
+  box-sizing: border-box;
+  background-color: #cfcfcf;
+}
+
+/* 对于消息框 .messages */
+.messages {
+  display: block;
+  flex: 1;
+  width: 100vw;
+  padding-top: 1vh;
+  overflow-y: scroll;
+  padding-bottom: 10vh;
+  text-align: right;
+  background-color: #cfcfcf;
+}
+
+.right {
+  display: block;
+  text-align: right;
+}
+
+.left {
+  display: block;
+  text-align: left;
+}
+
+/* 对于气泡 .bubble */
+.bubble {
+  max-width: 70%;
+  margin-bottom: 2.5vh;
+  padding: 2.5vw;
+  border-radius: 4px;
+  font-size: 4.5vw;
+  line-height: 1.4;
+  word-wrap: break-word;
+  background-color: #464444;
+}
+
+/* 对于用户消息 .user-message */
+.user-message {
+  display: inline-block;
+  text-align: left;
+  background-color: #20b846;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: 1vw;
+  border-top-right-radius: 0;
+}
+
+/* 对于机器人消息 .bot-message */
+.bot-message {
+  display: inline-block;
+  text-align: left;
+  background-color: #e4e4e4;
+  color: #4a4a4a;
+  margin-right: auto;
+  margin-left: 1vw;
+  border-top-left-radius: 0;
+}
+
+/* 对于输入框 .input-area */
+.input-area {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2.5vw;
+  padding-bottom: 3.5vw;
+  /* border-radius: 4vw; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #353131;
+}
+
+/* 对于输入框 .input */
+.input {
+  /* flex: 1; */
+  padding: 2vw;
+  border: 0.25vw solid #ddd;
+  border-radius: 2vw;
+  margin-right: 2.5vw;
+  font-size: 4.5vw;
+
+  height: 78rpx; 
+  display: block; 
+  box-sizing: border-box; 
+  left: 0rpx; 
+  top: 0rpx;
+  width: 90vw; 
+  display: block; 
+}
+
+/* 对于发送按钮 .send-btn */
+.send-btn {
+  display: block; 
+  background-color: #007AFF;
+  color: #ffffff;
+  padding: 2vw 1vw;
+  border-radius: 2vw;
+  width: 1vw; 
+  font-size: 4.5vw;
+
+  width: 146rpx; 
+  height: 74rpx; 
+  box-sizing: border-box;
+  left: 0rpx;
+  top: 0rpx
+}

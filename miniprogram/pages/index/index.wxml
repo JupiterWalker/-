@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="messages_box">
+  <view class="messages">
+    <block wx:for="{{messages}}" wx:key="index">
+      <view wx:if="{{item.type === 'user'}}" class="right">
+      <view wx:if="{{item.type === 'user'}}" class="user-message bubble"><text>{{item.text}}</text></view>
+      </view>
+      <view wx:if="{{item.type === 'bot'}}" class="left">
+      <view wx:if="{{item.type === 'bot'}}" class="bot-message bubble"><text>{{item.text}}</text></view>
+      </view>
+      <!-- <view class="split bubble"></view> -->
+
+    </block>
+  </view>
+</view>
+  <view class="input-area" style="bottom: {{inputAreaBottom}}px">
+    <textarea type="text" confirm-hold="{{ false }}" adjust-position="{{ false }}" class="input" placeholder="请输入内容" value="{{inputMessage}}" bindinput="onInput" confirm-type="return" 
+    bindfocus="onFocus" bindblur="onBlur"/>
+    <button class="send-btn" bindtap="onSendMessage">发送</button>
+  </view>
+</view>
